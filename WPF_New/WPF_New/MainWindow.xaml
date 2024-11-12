@@ -1,0 +1,48 @@
+﻿<Window x:Class="WPF_New.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF_New"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="150" Width="300">
+
+    <!-- Подключаем внешний файл ресурсов -->
+    <Window.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <!-- Указываем путь к файлу с ресурсами -->
+                <ResourceDictionary Source="Styles.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Window.Resources>
+
+    <!--<Grid>
+         Пример кнопки, использующей стиль CustomButtonStyle 
+        <Button Content="Нажми меня"
+                Style="{StaticResource CustomButtonStyle}"
+                VerticalAlignment="Center"
+                HorizontalAlignment="Center" Click="Button_Click" />
+        <Button Style="{StaticResource ImageButtonStyle}" 
+                Width="150" 
+                Height="150" 
+                Tag="C:\Users\user\source\repos\WPF_New\WPF_New\images.jpg"/>
+        
+    </Grid>-->
+
+    <ScrollViewer Style="{StaticResource CustomScrollViewerStyle}" 
+                  HorizontalScrollBarVisibility="Auto"
+                  VerticalScrollBarVisibility="Auto"
+                  Foreground="BlueViolet" Background="WhiteSmoke">
+
+        <!-- Широкий элемент для демонстрации горизонтальной прокрутки -->
+        <StackPanel >
+            <TextBlock Text="Длинный текст для активации горизонтальной прокрутки. " FontSize="16"/>
+            <TextBlock Text="Этот текст продолжается и должен вызвать горизонтальную прокрутку, если он превышает ширину окна. " FontSize="16"/>
+            <TextBlock Text="Добавляем больше текста, чтобы убедиться, что горизонтальная прокрутка активна. " FontSize="16"/>
+            <TextBlock Text="Прокрутите вправо, чтобы увидеть весь текст." FontSize="16"/>
+        </StackPanel>
+
+    </ScrollViewer>
+
+</Window>

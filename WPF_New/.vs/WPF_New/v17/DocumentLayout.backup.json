@@ -1,0 +1,66 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\user\\source\\repos\\WPF_New\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{7D527ED4-6680-4398-B561-D71958D03ACD}|WPF_New\\WPF_New.csproj|c:\\users\\user\\source\\repos\\wpf_new\\wpf_new\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{7D527ED4-6680-4398-B561-D71958D03ACD}|WPF_New\\WPF_New.csproj|solutionrelative:wpf_new\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D527ED4-6680-4398-B561-D71958D03ACD}|WPF_New\\WPF_New.csproj|c:\\users\\user\\source\\repos\\wpf_new\\wpf_new\\styles.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{7D527ED4-6680-4398-B561-D71958D03ACD}|WPF_New\\WPF_New.csproj|solutionrelative:wpf_new\\styles.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 197,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Styles.xaml",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\WPF_New\\WPF_New\\Styles.xaml",
+              "RelativeDocumentMoniker": "WPF_New\\Styles.xaml",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\WPF_New\\WPF_New\\Styles.xaml",
+              "RelativeToolTip": "WPF_New\\Styles.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-11-12T17:03:37.475Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\WPF_New\\WPF_New\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "WPF_New\\MainWindow.xaml",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\WPF_New\\WPF_New\\MainWindow.xaml*",
+              "RelativeToolTip": "WPF_New\\MainWindow.xaml*",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-11-12T17:02:27.423Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
