@@ -19,3 +19,8 @@ C:\Users\user\source\repos\WPF_New\WPF_New\obj\Debug\net8.0-windows\WPF_New.Asse
 C:\Users\user\source\repos\WPF_New\WPF_New\obj\Debug\net8.0-windows\WPF_New.csproj.CoreCompileInputs.cache
 C:\Users\user\source\repos\WPF_New\WPF_New\obj\Debug\net8.0-windows\WPF_New.genruntimeconfig.cache
 C:\Users\user\source\repos\WPF_New\WPF_New\obj\Debug\net8.0-windows\ref\WPF_New.dll
+C:\Users\user\source\repos\WPF_New\WPF_New\obj\Debug\net8.0-windows\SpinnerControl.baml
+C:\Users\user\source\repos\WPF_New\WPF_New\obj\Debug\net8.0-windows\SpinnerControl.g.cs
+C:\Users\user\source\repos\WPF_New\WPF_New\obj\Debug\net8.0-windows\DialogHost.g.cs
+C:\Users\user\source\repos\WPF_New\WPF_New\obj\Debug\net8.0-windows\GeneratedInternalTypeHelper.g.cs
+C:\Users\user\source\repos\WPF_New\WPF_New\obj\Debug\net8.0-windows\DialogHost.baml

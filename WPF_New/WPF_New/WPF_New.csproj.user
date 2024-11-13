@@ -7,6 +7,20 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
+    <Compile Update="DialogHost.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="SpinnerControl.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="DialogHost.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="SpinnerControl.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="Styles.xaml">
       <SubType>Designer</SubType>
     </Page>

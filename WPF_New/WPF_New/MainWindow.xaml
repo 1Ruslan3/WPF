@@ -30,19 +30,38 @@
         
     </Grid>-->
 
-    <ScrollViewer Style="{StaticResource CustomScrollViewerStyle}" 
+    <!--<ScrollViewer x:Name="scrollViewer"
+                  Style="{StaticResource CustomScrollViewerStyle}" 
                   HorizontalScrollBarVisibility="Auto"
                   VerticalScrollBarVisibility="Auto"
                   Foreground="BlueViolet" Background="WhiteSmoke">
 
-        <!-- Широкий элемент для демонстрации горизонтальной прокрутки -->
-        <StackPanel >
+        
+        <StackPanel>
             <TextBlock Text="Длинный текст для активации горизонтальной прокрутки. " FontSize="16"/>
             <TextBlock Text="Этот текст продолжается и должен вызвать горизонтальную прокрутку, если он превышает ширину окна. " FontSize="16"/>
             <TextBlock Text="Добавляем больше текста, чтобы убедиться, что горизонтальная прокрутка активна. " FontSize="16"/>
             <TextBlock Text="Прокрутите вправо, чтобы увидеть весь текст." FontSize="16"/>
         </StackPanel>
 
-    </ScrollViewer>
+    </ScrollViewer>-->
+
+    <!--<Grid>
+        <local:SpinnerControl CircleColor="Black"
+                              CircleCount="13"
+                              CircleSize="13"
+                              IsClockwise="True"
+                              RotationSpeed="13"
+                              Width="100"
+                              Height="100"/>
+    </Grid>-->
+
+    <local:DialogHost CornerRadius="10,10,10,10"
+                      BackgroundOpacity="0.5"
+                      BackgroundClick="DialogHost_BackgroundClick">
+        <TextBlock Text="Это содержимое диалога"
+                   HorizontalAlignment="Center"
+                   VerticalAlignment="Center"/>
+    </local:DialogHost>
 
 </Window>

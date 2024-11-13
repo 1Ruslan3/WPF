@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
 C:\Users\user\source\repos\WPF_New\WPF_New\App.xaml
-2787170672
+450649611
 
-6721522902
+8-395140541
 198-556154604
-MainWindow.xaml;Styles.xaml;
+DialogHost.xaml;MainWindow.xaml;SpinnerControl.xaml;Styles.xaml;
 
-False
+True
 

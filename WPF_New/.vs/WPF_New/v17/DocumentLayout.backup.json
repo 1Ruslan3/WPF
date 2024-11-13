@@ -7,6 +7,10 @@
       "RelativeMoniker": "D:0:0:{7D527ED4-6680-4398-B561-D71958D03ACD}|WPF_New\\WPF_New.csproj|solutionrelative:wpf_new\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{7D527ED4-6680-4398-B561-D71958D03ACD}|WPF_New\\WPF_New.csproj|c:\\users\\user\\source\\repos\\wpf_new\\wpf_new\\dialoghost.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{7D527ED4-6680-4398-B561-D71958D03ACD}|WPF_New\\WPF_New.csproj|solutionrelative:wpf_new\\dialoghost.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{7D527ED4-6680-4398-B561-D71958D03ACD}|WPF_New\\WPF_New.csproj|c:\\users\\user\\source\\repos\\wpf_new\\wpf_new\\styles.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{7D527ED4-6680-4398-B561-D71958D03ACD}|WPF_New\\WPF_New.csproj|solutionrelative:wpf_new\\styles.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     }
@@ -22,7 +26,7 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Styles.xaml",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\WPF_New\\WPF_New\\Styles.xaml",
               "RelativeDocumentMoniker": "WPF_New\\Styles.xaml",
@@ -39,10 +43,10 @@
               "Title": "MainWindow.xaml",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\WPF_New\\WPF_New\\MainWindow.xaml",
               "RelativeDocumentMoniker": "WPF_New\\MainWindow.xaml",
-              "ToolTip": "C:\\Users\\user\\source\\repos\\WPF_New\\WPF_New\\MainWindow.xaml*",
-              "RelativeToolTip": "WPF_New\\MainWindow.xaml*",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\WPF_New\\WPF_New\\MainWindow.xaml",
+              "RelativeToolTip": "WPF_New\\MainWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-11-12T17:02:27.423Z",
+              "WhenOpened": "2024-11-12T18:27:45.153Z",
               "IsPinned": true,
               "EditorCaption": ""
             },
@@ -57,6 +61,18 @@
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "DialogHost.xaml",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\WPF_New\\WPF_New\\DialogHost.xaml",
+              "RelativeDocumentMoniker": "WPF_New\\DialogHost.xaml",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\WPF_New\\WPF_New\\DialogHost.xaml",
+              "RelativeToolTip": "WPF_New\\DialogHost.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-11-13T16:56:36.763Z",
+              "EditorCaption": ""
             }
           ]
         }

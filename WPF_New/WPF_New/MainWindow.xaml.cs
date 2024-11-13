@@ -25,5 +25,12 @@ namespace WPF_New
         {
             this.Close();
         }
+
+        private void DialogHost_BackgroundClick(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("Фон диалога был нажат!");
+        }
+
+
     }
 }
