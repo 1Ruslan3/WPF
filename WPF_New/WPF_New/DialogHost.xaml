@@ -6,20 +6,29 @@
              xmlns:local="clr-namespace:WPF_New"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
-    
+
+    <UserControl.Resources>
+        <BooleanToVisibilityConverter x:Key="BooleanToVisibilityConverter"/>
+    </UserControl.Resources>
+
     <Grid>
-        <!-- Полупрозрачный фон -->
-        <Border Background="Black"
+        <!-- Фон диалога -->
+        <Border x:Name="BackgroundLayer"
+                Background="Black"
                 Opacity="{Binding BackgroundOpacity, RelativeSource={RelativeSource AncestorType=UserControl}}"
-                MouseDown="DialogBackground_MouseDown">
-            <!-- Рабочая область диалога -->
-            <Border Background="White"
-                    CornerRadius="{Binding CornerRadius, RelativeSource={RelativeSource AncestorType=UserControl}}"
-                    HorizontalAlignment="Center" VerticalAlignment="Center"
-                    Width="300" Height="200">
-                <ContentPresenter Content="{Binding Content, RelativeSource={RelativeSource AncestorType=UserControl}}" />
-            </Border>
+                Visibility="{Binding IsOpen, Converter={StaticResource BooleanToVisibilityConverter}, RelativeSource={RelativeSource AncestorType=UserControl}}"
+                MouseDown="BackgroundLayer_MouseDown"/>
+
+        <!-- Рабочая область -->
+        <Border x:Name="DialogContainer"
+                Background="White"
+                CornerRadius="{Binding CornerRadius, RelativeSource={RelativeSource AncestorType=UserControl}}"
+                Width="300"
+                Height="200"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center"
+                Visibility="{Binding IsOpen, Converter={StaticResource BooleanToVisibilityConverter}, RelativeSource={RelativeSource AncestorType=UserControl}}">
+            <ContentPresenter Content="{Binding DialogContent, RelativeSource={RelativeSource AncestorType=UserControl}}" />
         </Border>
     </Grid>
-    
 </UserControl>

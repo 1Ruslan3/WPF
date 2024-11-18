@@ -7,11 +7,9 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="150" Width="300">
 
-    <!-- Подключаем внешний файл ресурсов -->
     <Window.Resources>
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
-                <!-- Указываем путь к файлу с ресурсами -->
                 <ResourceDictionary Source="Styles.xaml"/>
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
@@ -56,12 +54,23 @@
                               Height="100"/>
     </Grid>-->
 
-    <local:DialogHost CornerRadius="10,10,10,10"
-                      BackgroundOpacity="0.5"
-                      BackgroundClick="DialogHost_BackgroundClick">
-        <TextBlock Text="Это содержимое диалога"
-                   HorizontalAlignment="Center"
-                   VerticalAlignment="Center"/>
-    </local:DialogHost>
+
+    <Grid>
+        
+        <!-- Основной контент -->
+        <Button Content="Открыть диалог" HorizontalAlignment="Center" VerticalAlignment="Center" Click="OpenDialog_Click" Height="20" Width="92" />
+
+        <!-- Диалоговый хост -->
+        <local:DialogHost x:Name="DialogHost"
+                          IsOpen="False"
+                          BackgroundOpacity="0.4"
+                          CornerRadius="0" Loaded="DialogHostControl_Loaded">
+            <local:DialogHost.DialogContent>
+                <TextBlock Text="Это диалог!" FontSize="16" VerticalAlignment="Center" HorizontalAlignment="Center" />
+            </local:DialogHost.DialogContent>
+        </local:DialogHost>
+    </Grid>
+
+
 
 </Window>
