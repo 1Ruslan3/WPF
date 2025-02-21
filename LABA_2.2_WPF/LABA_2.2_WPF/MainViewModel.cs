@@ -43,11 +43,11 @@ namespace LABA_2._2_WPF
             {
                 var instructions = _compiler.Compile(Code);
                 _vm.Execute(_compiler.LoadInstructionsIntoMemoryStream(instructions));
-                ShowResults("Execution completed successfully.\n\n" + GetRegisterValues());
+                //ShowResults("Execution completed successfully.\n\n" + GetRegisterValues());
             }
             catch (Exception ex)
             {
-                ShowResults($"Error: {ex.Message}");
+                //ShowResults($"Error: {ex.Message}");
             }
         }
 
@@ -73,12 +73,12 @@ namespace LABA_2._2_WPF
                             }
                         }
                         _vm.Execute(_compiler.LoadInstructionsIntoMemoryStream(instructions));
-                        ShowResults("Execution completed successfully.\n\n" + GetRegisterValues());
+                        //ShowResults("Execution completed successfully.\n\n" + GetRegisterValues());
                     }
                 }
                 catch (Exception ex)
                 {
-                    ShowResults($"Error: {ex.Message}");
+                    //ShowResults($"Error: {ex.Message}");
                 }
             }
         }
@@ -89,7 +89,7 @@ namespace LABA_2._2_WPF
             result.AppendLine("Register Values:");
             for (int i = 0; i < _vm.Registers.Length; i++)
             {
-                if (_vm.Registers[i] != 0) 
+                if (_vm.Registers[i] != 0)
                 {
                     result.AppendLine($"R{i}: {_vm.Registers[i]}");
                 }
@@ -97,11 +97,11 @@ namespace LABA_2._2_WPF
             return result.ToString();
         }
 
-        private void ShowResults(string result)
-        {
-            var outputWindow = new Output(result);
-            outputWindow.Show();
-        }
+        //private void ShowResults(string result)
+        //{
+        //    var outputWindow = new Output(result);
+        //    outputWindow.Show();
+        //}
 
         public event PropertyChangedEventHandler PropertyChanged;
         protected void OnPropertyChanged(string propertyName)
