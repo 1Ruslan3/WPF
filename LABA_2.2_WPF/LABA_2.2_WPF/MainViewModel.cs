@@ -6,7 +6,9 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
 using System.Windows.Input;
+using System.Windows.Shapes;
 
 namespace LABA_2._2_WPF
 {
@@ -43,11 +45,10 @@ namespace LABA_2._2_WPF
             {
                 var instructions = _compiler.Compile(Code);
                 _vm.Execute(_compiler.LoadInstructionsIntoMemoryStream(instructions));
-                //ShowResults("Execution completed successfully.\n\n" + GetRegisterValues());
             }
             catch (Exception ex)
             {
-                //ShowResults($"Error: {ex.Message}");
+                MessageBox.Show(ex.Message);
             }
         }
 
@@ -65,43 +66,22 @@ namespace LABA_2._2_WPF
                     using (var stream = openFileDialog.OpenFile())
                     {
                         var instructions = new List<uint>();
-                        using (var reader = new BinaryReader(stream))
-                        {
-                            while (reader.BaseStream.Position != reader.BaseStream.Length)
-                            {
-                                instructions.Add(reader.ReadUInt32());
-                            }
+                        string[] lines = File.ReadAllLines(openFileDialog.FileName);
+                        StringBuilder All_lines = new StringBuilder();
+                        foreach (string line in lines)
+                        {                            
+                            All_lines.AppendLine(line);                            
                         }
+                        instructions = _compiler.Compile(All_lines.ToString());
                         _vm.Execute(_compiler.LoadInstructionsIntoMemoryStream(instructions));
-                        //ShowResults("Execution completed successfully.\n\n" + GetRegisterValues());
                     }
                 }
                 catch (Exception ex)
                 {
-                    //ShowResults($"Error: {ex.Message}");
+                    MessageBox.Show(ex.Message);
                 }
             }
         }
-
-        private string GetRegisterValues()
-        {
-            var result = new StringBuilder();
-            result.AppendLine("Register Values:");
-            for (int i = 0; i < _vm.Registers.Length; i++)
-            {
-                if (_vm.Registers[i] != 0)
-                {
-                    result.AppendLine($"R{i}: {_vm.Registers[i]}");
-                }
-            }
-            return result.ToString();
-        }
-
-        //private void ShowResults(string result)
-        //{
-        //    var outputWindow = new Output(result);
-        //    outputWindow.Show();
-        //}
 
         public event PropertyChangedEventHandler PropertyChanged;
         protected void OnPropertyChanged(string propertyName)
