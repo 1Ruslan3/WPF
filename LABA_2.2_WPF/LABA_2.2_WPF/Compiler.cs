@@ -11,6 +11,7 @@ namespace LABA_2._2_WPF
 {
     class Compiler
     {
+        #region fields
         private Dictionary<string, int> opCodes = new Dictionary<string, int>
         {
             { "0", 0 },
@@ -39,7 +40,9 @@ namespace LABA_2._2_WPF
             { "23", 23 },
             { "24", 24 }
         };
+        #endregion
 
+        #region methods
         public List<uint> Compile(string code)
         {
             var instructions = new List<uint>();
@@ -88,5 +91,6 @@ namespace LABA_2._2_WPF
                 }
             }
         }
+        #endregion
     }
 }

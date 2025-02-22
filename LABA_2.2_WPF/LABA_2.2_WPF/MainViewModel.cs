@@ -14,10 +14,13 @@ namespace LABA_2._2_WPF
 {
     class MainViewModel : INotifyPropertyChanged
     {
+        #region fields
         private string _code;
         private Compiler _compiler;
         private VirtualMachine _vm;
+        #endregion
 
+        #region Constructor
         public MainViewModel()
         {
             _compiler = new Compiler();
@@ -25,7 +28,9 @@ namespace LABA_2._2_WPF
             PlayCommand = new RelayCommand(ExecutePlay);
             OpenFileCommand = new RelayCommand(ExecuteOpenFile);
         }
+        #endregion
 
+        #region properties
         public string Code
         {
             get => _code;
@@ -38,7 +43,9 @@ namespace LABA_2._2_WPF
 
         public ICommand PlayCommand { get; }
         public ICommand OpenFileCommand { get; }
+        #endregion
 
+        #region methods
         private void ExecutePlay(object parameter)
         {
             try
@@ -82,11 +89,14 @@ namespace LABA_2._2_WPF
                 }
             }
         }
+        #endregion
 
+        #region PropertyChanged
         public event PropertyChangedEventHandler PropertyChanged;
         protected void OnPropertyChanged(string propertyName)
         {
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
+        #endregion
     }
 }

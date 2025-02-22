@@ -10,10 +10,12 @@ namespace LABA_2._2_WPF
 {
     public class VirtualMachine
     {
+        #region fields
         public int[] Registers { get; } = new int[512];
         public List<List<int>> Values { get;  } = new List<List<int>>();
+        #endregion
 
-
+        #region methods
         public void Execute(MemoryStream memorys)      
         {
             int i = 1;
@@ -158,5 +160,6 @@ namespace LABA_2._2_WPF
             }
             MessageBox.Show(log.ToString(), "Результат выполнения инструкций");
         }
+        #endregion
     }
 }
